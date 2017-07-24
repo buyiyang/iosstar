@@ -1,10 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -371,7 +371,7 @@
                         <color key="backgroundColor" red="0.98039215686274506" green="0.98039215686274506" blue="0.98039215686274506" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="BZK-4S-GhC" firstAttribute="leading" secondItem="VZI-aF-Dpo" secondAttribute="leading" id="8gh-iH-DhW"/>
-                            <constraint firstAttribute="bottom" secondItem="BZK-4S-GhC" secondAttribute="bottom" constant="50" id="BLj-8N-nqX"/>
+                            <constraint firstItem="ueU-3K-xIB" firstAttribute="top" secondItem="BZK-4S-GhC" secondAttribute="bottom" id="S4x-ka-Pzd"/>
                             <constraint firstItem="mt2-Sb-Qeu" firstAttribute="top" secondItem="ueU-3K-xIB" secondAttribute="bottom" id="bn4-Fn-Ksk"/>
                             <constraint firstItem="ueU-3K-xIB" firstAttribute="leading" secondItem="VZI-aF-Dpo" secondAttribute="leading" id="oB9-wD-F74"/>
                             <constraint firstAttribute="trailing" secondItem="BZK-4S-GhC" secondAttribute="trailing" id="pWe-xJ-UMX"/>
@@ -726,7 +726,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="y2A-in-bsz" id="opk-1J-8VT">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="79"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="79.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="199.99元/秒" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Dp-fW-udG">
@@ -1258,7 +1258,7 @@
                                                     <rect key="frame" x="187.5" y="0.0" width="94" height="80"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.15" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZPv-kO-9KA">
-                                                            <rect key="frame" x="33" y="40" width="27" height="18"/>
+                                                            <rect key="frame" x="33.5" y="40" width="27" height="18"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="18" id="hOJ-7L-f3S"/>
                                                             </constraints>
@@ -1267,7 +1267,7 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="14:25:11" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b3K-fi-Z9W">
-                                                            <rect key="frame" x="20" y="12" width="53" height="14"/>
+                                                            <rect key="frame" x="20.5" y="12" width="53" height="14"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="14" id="6HZ-ly-UeQ"/>
                                                             </constraints>
@@ -1287,7 +1287,7 @@
                                                     <rect key="frame" x="281.5" y="0.0" width="93.5" height="80"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="购买" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b4y-go-fAe">
-                                                            <rect key="frame" x="32" y="42" width="29" height="18"/>
+                                                            <rect key="frame" x="32.5" y="42" width="29" height="18"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="18" id="5wT-xA-uVf"/>
                                                             </constraints>
@@ -1296,7 +1296,7 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="成功" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4KI-C2-onW">
-                                                            <rect key="frame" x="32" y="14" width="29" height="14"/>
+                                                            <rect key="frame" x="32.5" y="14" width="29" height="14"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="14" id="bzC-YC-CEg"/>
                                                             </constraints>
@@ -1412,7 +1412,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="5RR-hx-khM" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="T3V-av-IRf">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="T3V-av-IRf">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>

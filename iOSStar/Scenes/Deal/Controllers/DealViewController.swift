@@ -29,11 +29,6 @@ class DealViewController: RedBackItemViewController,DealScrollViewScrollDelegate
         super.viewWillAppear(animated)
         self.navigationController?.navigationBar.HideLine()
     }
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        menuView?.selected(index: index)
-    }
-    
     func setupMenuView() {
         navigationController?.navigationBar.setBackgroundImage(UIColor.white.imageWithColor(), for: .default)
         let layout = UICollectionViewFlowLayout()

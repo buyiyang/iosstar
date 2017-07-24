@@ -127,9 +127,6 @@ class HeatListViewController: UITableViewController {
         // Dispose of any resources that can be recreated.
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if dataSource == nil || dataSource!.count == 0{
-            return
-        }
         if segue.identifier == "ToDeal" {
             let indexPath = sender as! IndexPath
             if let vc = segue.destination as? HeatDetailViewController {

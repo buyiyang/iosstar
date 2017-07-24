@@ -128,10 +128,10 @@ class SellingViewController: UIViewController {
         requestModel.symbol = starModel!.symbol
         
         AppAPIHelper.discoverAPI().buyStarTime(requestModel: requestModel, complete: { (response) in
-            if let result = response as? Int{
+            if let result = response?["result"] as? Int{
                 if result == 1{
                    SVProgressHUD.showSuccessMessage(SuccessMessage: "购买成功", ForDuration: 1, completion: { 
-                     _ = self.navigationController?.popViewController(animated: true)
+                    self.navigationController?.popViewController(animated: true)
                    })
                  }else{
                   SVProgressHUD.showErrorMessage(ErrorMessage: "交易失败", ForDuration: 1, completion: nil)

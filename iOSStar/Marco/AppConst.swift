@@ -17,7 +17,8 @@ typealias paramBlock = (AnyObject?) ->()?
 let kScreenWidth = UIScreen.main.bounds.size.width
 let kScreenHeight = UIScreen.main.bounds.size.height
 //MARK: --正则表达
-func isTelNumber(num: String)->Bool{
+func isTelNumber(num: String)->Bool
+{
     let predicate:NSPredicate = NSPredicate(format: "SELF MATCHES %@", "^1[3|4|5|7|8][0-9]\\d{8}$")
     return predicate.evaluate(with: num)
 }
@@ -56,6 +57,7 @@ class AppConst {
     }
     
     class Color {
+
         static let main = "921224"
         static let orange = "FB9938"
         static let up = "CB4232"
@@ -83,7 +85,7 @@ class AppConst {
         static let S4 = UIFont.systemFont(ofSize: 12)
         static let S5 = UIFont.systemFont(ofSize: 10)
         static let S14 = UIFont.systemFont(ofSize: 14)
-    }
+    };
     
     enum iconFontName: String {
         case backItem = "\u{e61a}"
@@ -99,17 +101,19 @@ class AppConst {
     }
     
     class Network {
-        #if false
-        //是否测试环境
+        #if false  //是否测试环境
         //139.224.34.22
-        //122.144.169.214
+       //122.144.169.214
+
         static let TcpServerIP:String = "139.224.34.22";
+
         static let TcpServerPort:UInt16 = 16006
+
         static let TttpHostUrl:String = "dapi.star.smartdata-x.com";
         #else
         static let TcpServerIP:String = "122.144.169.214";
         static let TcpServerPort:UInt16 = 16006
-        static let HttpHostUrl:String = "122.144.169.214";
+        static let HttpHostUrl:String = "api.star.smartdata-x.com";
         #endif
         static let TimeoutSec:UInt16 = 10
         static let qiniuHost = "http://ofr5nvpm7.bkt.clouddn.com/"
@@ -127,6 +131,7 @@ class AppConst {
         static let RegisterPhoneError = "输入的手机号已注册"
         static let numberReg = "^(?!0(\\d|\\.0+$|$))\\d+(\\.\\d{1,2})?$"
     }
+    
     
     enum Action:UInt {
         case callPhone = 10001
@@ -181,7 +186,6 @@ class AppConst {
         case down = 0
         case up = 1
     }
-    
     enum DealDetailType:UInt16 {
         //当日成交
         case todayComplete = 6007

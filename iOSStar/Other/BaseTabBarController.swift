@@ -39,8 +39,8 @@ class BaseTabBarController: UITabBarController ,UITabBarControllerDelegate,NIMSy
             let storyboard = UIStoryboard.init(name: name, bundle: nil)
             let controller = storyboard.instantiateInitialViewController()
             controller?.tabBarItem.title = titles[index]
-            controller?.tabBarItem.image = UIImage.init(named: "\(storyboardNames[index])_unselect")?.withRenderingMode(.alwaysOriginal)
-            controller?.tabBarItem.selectedImage = UIImage.init(named: "\(storyboardNames[index])_selected")?.withRenderingMode(.alwaysOriginal)
+            controller?.tabBarItem.image = UIImage.init(named: "\(iconName[index])_unselect")?.withRenderingMode(.alwaysOriginal)
+            controller?.tabBarItem.selectedImage = UIImage.init(named: "\(iconName[index])_selected")?.withRenderingMode(.alwaysOriginal)
             controller?.tabBarItem.setTitleTextAttributes([NSForegroundColorAttributeName: UIColor(hexString: AppConst.Color.titleColor)], for: .selected)
             addChildViewController(controller!)
         }

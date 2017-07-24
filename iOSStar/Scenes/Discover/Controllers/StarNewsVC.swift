@@ -4,7 +4,7 @@
 //
 //  Created by mu on 2017/7/11.
 //  Copyright © 2017年 com.yundian. All rights reserved.
-// 慕云飞
+//
 
 import UIKit
 import YYText
@@ -254,8 +254,7 @@ class StarNewsVC: BaseTableViewController, OEZTableViewDelegate {
                             user.uid = (StarUserModel.getCurrentUser()?.userinfo?.id)!
                             user.user_name = (StarUserModel.getCurrentUser()?.userinfo?.agentName)!
                             model.approve_list.append(user)
-//                            tableView.reloadRows(at: [indexPath], with: .automatic)
-                            tableView.reloadData()
+                            tableView.reloadRows(at: [indexPath], with: .automatic)
                         })
                     }
                 }

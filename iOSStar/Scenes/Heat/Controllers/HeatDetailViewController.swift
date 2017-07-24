@@ -74,7 +74,7 @@ class HeatDetailViewController: UIViewController {
         initCountDownBlock()
         requestFansList(buySell:1)
         requestFansList(buySell:-1)
-        requestAuctionSattus()
+
         ballImageView.alpha = 0.5
 
     }
@@ -147,7 +147,6 @@ class HeatDetailViewController: UIViewController {
         AppAPIHelper.marketAPI().requestAuctionStatus(requestModel: model, complete: { (response) in
             if let model = response as? AuctionStatusModel {
                 self.statusModel = model
-                self.refreshSatus()
             }
         }) { (error) in
 

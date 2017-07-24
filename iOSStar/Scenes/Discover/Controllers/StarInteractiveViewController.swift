@@ -44,9 +44,6 @@ class StarInteractiveViewController: UIViewController {
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if dataSource == nil || dataSource!.count == 0{
-            return
-        }
         if let indexPath = sender as? IndexPath {
             let model = dataSource![indexPath.item]
             let vc = segue.destination

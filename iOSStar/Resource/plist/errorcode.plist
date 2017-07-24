@@ -16,30 +16,24 @@
 	<string>验证码已过期</string>
 	<key>-6</key>
 	<string>验证码错误</string>
-	<key>-101</key>
-	<string>用户操作异常</string>
 	<key>-102</key>
 	<string>微信下载失败</string>
 	<key>-103</key>
 	<string>充值列表状态参数错误</string>
-	<key>-300</key>
-	<string>数据库异常</string>
 	<key>-301</key>
 	<string>当前手机号码已经被注册</string>
 	<key>-302</key>
 	<string>密码错误</string>
 	<key>-303</key>
-	<string>检查token失败</string>
+	<string>token失效</string>
 	<key>-304</key>
 	<string>该用户已存在</string>
 	<key>-305</key>
-	<string>获取用户版本不正确</string>
+	<string>手机号或密码错误</string>
 	<key>-306</key>
-	<string>保存设备类型失败</string>
+	<string>会员ID不能为空</string>
 	<key>-401</key>
 	<string>没有对应的报价</string>
-	<key>-402</key>
-	<string>没有对应的分时数据</string>
 	<key>-404</key>
 	<string>没有对应的行情</string>
 	<key>-403</key>
@@ -50,134 +44,50 @@
 	<string>該明星不能交易</string>
 	<key>-503</key>
 	<string>订单不存在</string>
+	<key>-101</key>
+	<string>用戶異常操作</string>
+	<key>-402</key>
+	<string>没有对应的分时数据</string>
 	<key>-504</key>
 	<string>订单已经被取消</string>
 	<key>-505</key>
 	<string>更新订单状态失败</string>
 	<key>-506</key>
 	<string>订单数据异常</string>
-	<key>-507</key>
-	<string>订单取消失败</string>
 	<key>-601</key>
 	<string>没有相关交易的历史数据</string>
+	<key>-507</key>
+	<string>订单取消失败</string>
 	<key>-602</key>
 	<string>没有历史数据</string>
 	<key>-603</key>
 	<string>没有委托数据</string>
 	<key>-604</key>
 	<string>没有交易数据</string>
-	<key>-651</key>
-	<string>没有历史数据</string>
-	<key>-652</key>
-	<string>没有处理的历史数据</string>
-	<key>-653</key>
-	<string>没有balance</string>
-	<key>-654</key>
-	<string>没有用户信息</string>
-	<key>-655</key>
-	<string>获取银行信息失败</string>
-	<key>-656</key>
-	<string>没有现金历史数据</string>
-	<key>-657</key>
-	<string>没有历史交易数据</string>
-	<key>-658</key>
-	<string>没有历史明星数据</string>
-	<key>-700</key>
-	<string>数据库错误</string>
 	<key>-701</key>
 	<string>微信下单失败</string>
 	<key>-702
 -702-702</key>
-	<string>微信创建交易记录失败</string>
-	<key>-704</key>
-	<string>创建订单失败</string>
-	<key>-705</key>
-	<string>提现失败</string>
-	<key>-801</key>
-	<string>没有绑定银行卡</string>
-	<key>-802</key>
-	<string>绑定银行卡不存在</string>
-	<key>-803</key>
-	<string>银行卡不存在</string>
-	<key>-804</key>
-	<string>解绑银行卡失败</string>
-	<key>-900</key>
-	<string>数据库错误</string>
-	<key>-901</key>
-	<string>扣减聊天时间错误</string>
-	<key>-902</key>
-	<string>编辑云信好友失败</string>
-	<key>-903</key>
-	<string>获取云信好友失败</string>
-	<key>-904</key>
-	<string>删除云信好友失败</string>
-	<key>-905</key>
-	<string>添加云信好友失败</string>
-	<key>-906</key>
-	<string>刷新token失败</string>
-	<key>-907</key>
-	<string>用户明星时间不足</string>
-	<key>-1000</key>
-	<string>持有时间不足</string>
-	<key>-1001</key>
-	<string>获取明星时间错误</string>
-	<key>-1002</key>
-	<string>获取订购明星时间失败</string>
-	<key>-1003</key>
-	<string>获取订购明星信息失败</string>
-	<key>-1004</key>
-	<string>获取明星约见类型失败</string>
-	<key>-1006</key>
-	<string>获取banner信息失败</string>
-	<key>-1007</key>
-	<string>获取明星新闻失败</string>
-	<key>-1008</key>
-	<string>添加明星失败</string>
-	<key>-1101</key>
-	<string>数据库无数据</string>
-	<key>-1102</key>
-	<string>获取明星信息失败</string>
-	<key>-1103</key>
-	<string>获取求购列表失败</string>
-	<key>-1104</key>
-	<string>获取明星成交订单信息失败</string>
-	<key>-1105</key>
-	<string>获取订单列表失败</string>
-	<key>-1106</key>
-	<string>获取明星成就失败</string>
-	<key>-1107</key>
-	<string>获取明星经历失败</string>
-	<key>-1108</key>
-	<string>搜索明星列表失败</string>
-	<key>-1109</key>
-	<string>获取明星信息失败</string>
-	<key>-1201</key>
-	<string>没有评论数据</string>
+	<string>存储订单失败</string>
 	<key>-1202</key>
 	<string>数据为空</string>
-	<key>-1400</key>
-	<string>数据库异常</string>
-	<key>-1401</key>
-	<string>抢购明星不存在</string>
-	<key>-1402</key>
-	<string>明星剩余时间不足</string>
-	<key>-1403</key>
-	<string>用户不存在</string>
-	<key>-1404</key>
-	<string>用户余额不足</string>
-	<key>-1500</key>
-	<string>数据库异常</string>
-	<key>-1501</key>
-	<string>内存不足</string>
-	<key>-1502</key>
-	<string>圈子不存在</string>
-	<key>-1503</key>
-	<string>明星回复错误</string>
-	<key>-1504</key>
-	<string>明星没有圈子信息</string>
-	<key>-1505</key>
-	<string>用户时间不足</string>
-	<key>-1506</key>
-	<string>用户没有购买明星时间</string>
+	<key>-1109</key>
+	<string>获取明星信息失败</string>
+	<key>-1107</key>
+	<string>获取明星经历失败</string>
+	<key>-1106</key>
+	<string>获取明星成就失败</string>
+	<key>-1105</key>
+	<string>获取订单列表失败</string>
+	<key>-1103</key>
+	<string>获取求购列表失败</string>
+	<key>-1000</key>
+	<string>持有时间不足</string>
+	<key>-1002</key>
+	<string>获取订购明星时间失败</string>
+	<key>-1001</key>
+	<string>获取明星时间错误</string>
+	<key>-1004</key>
+	<string>获取明星约见类型失败</string>
 </dict>
 </plist>

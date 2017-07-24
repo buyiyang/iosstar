@@ -53,6 +53,7 @@
 		6E1B571D1ED40FE100A014AE /* DealHintCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E1B571C1ED40FE100A014AE /* DealHintCell.swift */; };
 		6E1B571F1ED410C900A014AE /* DealSingleRowCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E1B571E1ED410C900A014AE /* DealSingleRowCell.swift */; };
 		6E1B57211ED41BDA00A014AE /* DealScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E1B57201ED41BDA00A014AE /* DealScrollView.swift */; };
+		6E1CE59D1F03DA8A0095AEB3 /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E1CE59C1F03DA8A0095AEB3 /* bg.png */; };
 		6E22721D1EF941B300AF9579 /* CommenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E22721C1EF941B300AF9579 /* CommenModel.swift */; };
 		6E2CC4511F0D065E00281559 /* UIViewController+Analysis.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E2CC4501F0D065E00281559 /* UIViewController+Analysis.swift */; };
 		6E2CC4531F0DD96700281559 /* Discover.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E2CC4521F0DD96700281559 /* Discover.storyboard */; };
@@ -636,6 +637,7 @@
 		6E1B571C1ED40FE100A014AE /* DealHintCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DealHintCell.swift; sourceTree = "<group>"; };
 		6E1B571E1ED410C900A014AE /* DealSingleRowCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DealSingleRowCell.swift; sourceTree = "<group>"; };
 		6E1B57201ED41BDA00A014AE /* DealScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DealScrollView.swift; sourceTree = "<group>"; };
+		6E1CE59C1F03DA8A0095AEB3 /* bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg.png; sourceTree = "<group>"; };
 		6E22721C1EF941B300AF9579 /* CommenModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CommenModel.swift; path = iOSStar/Model/ShareDataModel/CommenModel.swift; sourceTree = SOURCE_ROOT; };
 		6E2CC4501F0D065E00281559 /* UIViewController+Analysis.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Analysis.swift"; sourceTree = "<group>"; };
 		6E2CC4521F0DD96700281559 /* Discover.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Discover.storyboard; sourceTree = "<group>"; };
@@ -3600,6 +3602,7 @@
 			children = (
 				8E2BD3BA1F1C4EFC00B7E4BE /* iconfont.ttf */,
 				8D4F6AA51F0751570038DE32 /* 1242x2208.png */,
+				6E1CE59C1F03DA8A0095AEB3 /* bg.png */,
 				6E2CC4661F0E24EC00281559 /* 138415562044.jpg */,
 				A0155E061EA8ABF20047B95B /* Images.xcassets */,
 			);
@@ -4196,6 +4199,7 @@
 				A03D3F711EA86A6500F85308 /* NTESSearchTeamViewController.xib in Resources */,
 				A03D3FD11EA86A6500F85308 /* NTESLogViewController.xib in Resources */,
 				8D4F6AA61F0751570038DE32 /* 1242x2208.png in Resources */,
+				6E1CE59D1F03DA8A0095AEB3 /* bg.png in Resources */,
 				A03D3FB41EA86A6500F85308 /* NTESGalleryViewController.xib in Resources */,
 				8D7308781EF2C14A0051E713 /* TradingAlertView.xib in Resources */,
 				6E2CC4531F0DD96700281559 /* Discover.storyboard in Resources */,

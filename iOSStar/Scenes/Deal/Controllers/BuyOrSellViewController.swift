@@ -41,11 +41,8 @@ class BuyOrSellViewController: DealBaseViewController {
             requestRealTime()
         }
        requestPositionCount()
-       requetTotalCount()
+     requetTotalCount()
     }
-    
-    
-    
     func registerNotification() {
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(notification:)), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide(notification:)), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
@@ -68,7 +65,7 @@ class BuyOrSellViewController: DealBaseViewController {
         }
         AppAPIHelper.marketAPI().requestTotalCount(starCode: starListModel!.symbol, complete: { (response) in
             if let model = response as? StarTotalCountModel {
-                self.totalCount = Int(model.star_time)
+                self.count = Int(model.star_time)
             }
             
         }) { (error) in
@@ -109,21 +106,8 @@ class BuyOrSellViewController: DealBaseViewController {
         }) { (error) in
             SVProgressHUD.dismiss()
         }
-        
     }
     
-
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-        YD_CountDownHelper.shared.marketTimeLineRefresh = nil
-
-    }
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        YD_CountDownHelper.shared.marketTimeLineRefresh = { [weak self] (result)in
-            self?.requestRealTime()
-        }
-    }
 
     func requestRealTime() {
         let requestModel = RealTimeRequestModel()
@@ -172,14 +156,15 @@ class BuyOrSellViewController: DealBaseViewController {
 extension BuyOrSellViewController:UITableViewDelegate, UITableViewDataSource, UIScrollViewDelegate, OrderInfoChangeDelegate,ShowEntrustDelegate{
     
     func show() {
+
         let storyBoard = UIStoryboard(name: "Market", bundle: nil)
         let vc = storyBoard.instantiateViewController(withIdentifier: "MarketFansListViewController") as? MarketFansListViewController
         vc?.starCode = starListModel?.symbol
         navigationController?.pushViewController(vc!, animated: true)
+    
     }
     
     func priceDidChange(totalPrice: Double, count: Int, price: Double) {
-    
         let priceString = String(format: "%.2f", totalPrice)
         orderPriceLabel.setAttributeText(text: "总价：\(priceString)", firstFont: 18, secondFont: 18, firstColor: UIColor(hexString: "999999"), secondColor: UIColor(hexString: "FB9938"), range: NSRange(location: 3, length: priceString.length()))
         self.count = count
@@ -193,12 +178,9 @@ extension BuyOrSellViewController:UITableViewDelegate, UITableViewDataSource, UI
         }
     }
 
-    func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        view.endEditing(true)
-        view.y = 0
-    }
+   
     func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
-        
+        tableView.endEditing(true)
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return CGFloat(rowHeights[indexPath.row])

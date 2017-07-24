@@ -46,22 +46,6 @@ class SocketJsonResponse: SocketResponse {
             return errorCode;
         }
     }
-    
-    var result: Int {
-        get{
-            let dict:NSDictionary? = responseJsonObject() as? NSDictionary
-            var errorCode: Int = 0;
-            if ( dict == nil ) {
-                errorCode = -11012; //json解析失败
-            }else if(  dict != nil && dict?["result"] != nil ) {
-                errorCode =  dict?["result"] as! Int;
-            }else {
-                errorCode = 0;
-            }
-            return errorCode;
-        }
-    }
-    
     func responseJsonObject() -> AnyObject? {
         if body?.data?.count == 0  {
             return nil

@@ -86,10 +86,6 @@ class SocketRequestManage: NSObject {
             ShareDataModel.share().controlSwitch = false
             return
         }
-        if response.result < 0{
-            socketReqeust?.onError(response.result)
-            return
-        }
         if ( statusCode < 0) && packet.data?.count != 0 {
             
             socketReqeust?.onError(statusCode)
