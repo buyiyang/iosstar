@@ -94,7 +94,7 @@ class OrderStarListInfoModel: NSObject {
     
     var star_code : String = "-"
     var star_name : String = "-"
-    var star_pic : String = "-"
+    var star_pic_tail : String = "-"
     var star_type : Int64 = 0
     var meet_id  = 1
     var meet_name : String = "-"
